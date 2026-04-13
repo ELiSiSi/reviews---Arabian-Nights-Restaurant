@@ -5,7 +5,7 @@ import { AllEvaluation , deleteAllEvaluations} from '../servers/AllEvaluationSer
 
 const router = express.Router();
 
-router.get('/all-evaluation', AllEvaluation);
+router.get('/all-evaluation/gfkjgldkfjgfgjfdjgklfdjgojjgoireiojgoijgoidfjglkdfgjdflkgjeroigjeroigjfrfrlkgfdlgjdgoierjgoiergjeroigjeroigjreoigjreoigjreopigjeroijgreojgoerjgoir', AllEvaluation);
 router.delete('/api/deleteall', deleteAllEvaluations);
 
 export default router;
