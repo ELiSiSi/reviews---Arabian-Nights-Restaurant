@@ -13,5 +13,7 @@ export const AllEvaluation = asyncHandler(async (req, res) => {
 
 export const deleteAllEvaluations = asyncHandler(async (req, res) => {
   await Rating.deleteMany({});
-  res.redirect('/all-evaluation');
+  res.redirect(
+    '/all-evaluation/gfkjgldkfjgfgjfdjgklfdjgojjgoireiojgoijgoidfjglkdfgjdflkgjeroigjeroigjfrfrlkgfdlgjdgoierjgoiergjeroigjeroigjreoigjreoigjreopigjeroijgreojgoerjgoir'
+  );
 });
