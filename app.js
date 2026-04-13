@@ -55,9 +55,15 @@ app.get('/', async (req, res) => {
 
 
 mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log('DB Connected'))
-  .catch((err) => console.log(err));
+  .connect(MONGO_URI)
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Server running on http://localhost:${PORT}/rating`);
+    });
+  })
+  .catch((err) => {
+    console.error('MongoDB connection error:', err);
+  });
 
 
   export default app;
