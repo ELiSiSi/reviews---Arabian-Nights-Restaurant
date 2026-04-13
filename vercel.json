@@ -1,14 +1,22 @@
 {
   "version": 2,
-  "functions": {
-    "app.js": {
-      "includeFiles": "views/**"
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node",
+      "config": {
+        "maxDuration": 10
+      }
     }
-  },
+  ],
   "routes": [
     {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "app.js"
+      "dest": "/app.js"
     }
   ]
 }

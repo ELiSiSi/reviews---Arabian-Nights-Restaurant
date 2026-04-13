@@ -5,7 +5,7 @@
 }
 
 :root {
-  --main-color: #ff9900;
+  --main-color:   #E93222;
   --excellent: #28a745;
   --good: #ffc107;
   --poor: #dc3545;
@@ -521,3 +521,17 @@ body {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.stat-label { font-size: 13px; color: #666; margin-bottom: 6px; }
+.stat-sub { font-size: 11px; color: #999; margin-top: 4px; }
+.cat-bars { background: #f9f9f9; border: 1px solid #eee; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+.cat-title { font-size: 14px; font-weight: 500; margin-bottom: 12px; }
+.bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.bar-label { font-size: 13px; width: 80px; text-align: right; }
+.bar-track { flex: 1; height: 10px; background: #e0e0e0; border-radius: 99px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 99px; }
+.bar-val { font-size: 12px; width: 45px; }
+.dist-row { display: flex; gap: 10px; }
+.dist-card { flex: 1; background: #f9f9f9; border: 1px solid #eee; border-radius: 12px; padding: 12px; text-align: center; }
+.dist-count { font-size: 22px; font-weight: 500; }
+.dist-lbl { font-size: 12px; color: #888; margin-top: 4px; }
