@@ -21,7 +21,7 @@
     <div class="container">
       <h1>📊 تقييمات العملاء</h1>
 
-      <!-- فلتر البحث بالتاريخ
+      فلتر البحث بالتاريخ
       <div class="filter-section">
         <h3>🔍 فلتر التقييمات حسب التاريخ</h3>
         <div class="filter-inputs">
@@ -36,7 +36,7 @@
           <button id="filterBtn" class="filter-btn">بحث 🔎</button>
           <button id="resetBtn" class="reset-btn">إعادة تعيين 🔄</button>
         </div>
-      </div> -->
+      </div>
 
       <div class="delete-section">
         <form action="/api/deleteall?_method=DELETE" method="POST">
@@ -70,11 +70,11 @@
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-label">📈 إجمالي التقييمات</div>
-          <p class="stat-number"><%= ratings.length %></p>
+          <p id="totalCount" class="stat-number"><%= ratings.length %></p>
         </div>
         <div class="stat-card">
           <div class="stat-label">⭐ متوسط عام</div>
-          <p class="stat-number"><%= totalAvg %>/10</p>
+          <p id="avgRating" class="stat-number"><%= totalAvg %>/10</p>
         </div>
         <div class="stat-card">
           <div class="stat-label">🏆 أعلى تقييم</div>
@@ -134,11 +134,11 @@
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-label">📈 إجمالي التقييمات</div>
-          <p class="stat-number">0</p>
+          <p id="totalCount" class="stat-number">0</p>
         </div>
         <div class="stat-card">
           <div class="stat-label">⭐ متوسط عام</div>
-          <p class="stat-number">-</p>
+          <p id="avgRating" class="stat-number">-</p>
         </div>
         <div class="stat-card">
           <div class="stat-label">🏆 أعلى تقييم</div>
